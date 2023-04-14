@@ -18,7 +18,7 @@ import static io.qameta.allure.Allure.step;
 public class WikipediaTests extends TestBase {
     @DisplayName("Checking text in due order")
     @Test
-    @Owner("Sukhinin Dmitrii")
+    @Owner("toytronic")
     void checkButtonLogIn() {
 
         step("Click on the NavBar Menu button", () -> {
@@ -36,7 +36,7 @@ public class WikipediaTests extends TestBase {
 
     @DisplayName("Checking the opening of an article with an error")
     @Test
-    @Owner("Sukhinin Dmitrii")
+    @Owner("toytronic")
     void openArticleWithErrorTest() {
 
         step("Go to search input and type search", () -> {
@@ -51,7 +51,7 @@ public class WikipediaTests extends TestBase {
     }
     @DisplayName("Search validation")
     @Test
-    @Owner("Sukhinin Dmitrii")
+    @Owner("toytronic")
     void searchInputTest() {
 
         step("Go to search input and type search", () -> {

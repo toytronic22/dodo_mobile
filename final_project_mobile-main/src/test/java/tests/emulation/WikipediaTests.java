@@ -13,7 +13,7 @@ import static io.qameta.allure.Allure.step;
 @Tag("emulation")
 public class WikipediaTests extends TestBase {
     @DisplayName("Checking onboarding screen")
-    @Owner("Sukhinin Dmitrii")
+    @Owner("toytronic")
     @Test
     public void checkOnboardingScreen() {
 
@@ -31,7 +31,7 @@ public class WikipediaTests extends TestBase {
     }
 
     @DisplayName("Successful article opening")
-    @Owner("Sukhinin Dmitrii")
+    @Owner("toytronic")
     @Test
     void openArticleTest() {
         back();
