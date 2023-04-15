@@ -22,7 +22,7 @@ public class DodoProductTest extends TestBase {
     void checkButtonLogIn() {
 
         step("Choose country", () -> {
-            $(AppiumBy.id("ru.dodopizza.app:id/00000000-0000-0021-ffff-ffff00000043"));
+            $(AppiumBy.id("ru.dodopizza.app:id/00000000-0000-0021-ffff-ffff00000043")).click();
         });
         step("Choose delivery option", () -> {
             $(AppiumBy.id("ru.dodopizza.app:id/00000000-0000-0019-ffff-ffff0000005b")).click();
