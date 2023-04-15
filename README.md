@@ -89,13 +89,16 @@ gradle clean browserstack_test -Denv=browserstack
 <img title="Telegram Notifications" src="media/screen/Telegram.png">
 
 ## <img width="4%" title="Browserstack" src="media/logo/Browserstack.svg"> Пример запуска теста в Browserstack
+Присутствует отчёт нагрузки устройств
+<p align="center">
+  <img src="media/screen/system.png" alt="dashboard" width="900">
+</p>
 
 К каждому тесту в отчете прилагается видео.
 
 На данном видео выполняется:
 
 - Проверка добавления продукта в корзину
-
 
 <p align="center">
   <img title="Browserstack Video" src="media/video/mobile_browserstack_test.gif">
