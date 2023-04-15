@@ -17,17 +17,20 @@ public class AddToCartTest extends TestBase {
     @Test
     @Owner("toytronic")
     void checkComboForOne() {
-        step("Choose Drinks", () -> {
-            $(AppiumBy.xpath("//android.widget.LinearLayout[@content-desc=\"Напитки\"]/android.widget.TextView")).click();
+        step("Choose Coctails", () -> {
+            $(AppiumBy.xpath("//android.widget.LinearLayout[@content-desc=\"Коктейли\"]/android.widget.TextView")).click();
         });
-        step("Put Cola in cart", () -> {
+        step("Choose Coffee", () -> {
+            $(AppiumBy.xpath("//android.widget.LinearLayout[@content-desc=\"Кофе\"]/android.widget.TextView")).click();
+        });
+        step("Put Latte in cart", () -> {
             $(AppiumBy.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.ViewSwitcher/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.FrameLayout[1]/android.view.ViewGroup/android.view.ViewGroup[2]/android.widget.FrameLayout/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[1]/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.Button")).click();
         });
         step("Go to cart", () -> {
             $(AppiumBy.xpath("//android.widget.FrameLayout[@content-desc=\"Корзина\"]/android.widget.FrameLayout/android.widget.ImageView")).click();
         });
-        step("Check cola is in cart", () -> {
-            $(AppiumBy.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.ViewSwitcher/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.FrameLayout[1]/android.widget.RelativeLayout/android.widget.ViewSwitcher/android.widget.RelativeLayout/android.widget.ScrollView/android.widget.LinearLayout/androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout/android.widget.RelativeLayout[1]/android.widget.LinearLayout/android.widget.TextView[1]")).shouldHave(Condition.text("Добрый Кола"));
+        step("Check coffee is in cart", () -> {
+            $(AppiumBy.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.ViewSwitcher/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.FrameLayout[1]/android.widget.RelativeLayout/android.widget.ViewSwitcher/android.widget.RelativeLayout/android.widget.ScrollView/android.widget.LinearLayout/androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout[1]/android.widget.RelativeLayout[1]/android.widget.LinearLayout/android.widget.TextView[1]")).shouldHave(Condition.text("Кофе Кокосовый латте"));
         });
     }
 }
