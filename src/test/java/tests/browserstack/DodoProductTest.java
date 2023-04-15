@@ -1,5 +1,6 @@
 package tests.browserstack;
 
+import com.codeborne.selenide.Condition;
 import io.appium.java_client.AppiumBy;
 import io.qameta.allure.Owner;
 import org.junit.jupiter.api.DisplayName;
@@ -19,16 +20,25 @@ public class DodoProductTest extends TestBase {
     @DisplayName("Checking text in due order")
     @Test
     @Owner("toytronic")
-    void checkButtonLogIn() {
+    void checkComboForOne() {
 
         step("Choose country", () -> {
             $(AppiumBy.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.ViewSwitcher/android.widget.FrameLayout/android.widget.LinearLayout/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[10]/android.widget.TextView")).click();
         });
         step("Choose delivery option", () -> {
-            $(AppiumBy.id("ru.dodopizza.app:id/00000000-0000-0019-ffff-ffff0000005b")).click();
+            $(AppiumBy.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.ViewSwitcher/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.LinearLayout/android.view.ViewGroup[2]/android.widget.TextView")).click();
         });
         step("Choose city", () -> {
-            $(AppiumBy.id("ru.dodopizza.app:id/00000000-0000-0019-ffff-ffff00000095")).click();
+            $(AppiumBy.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.ViewSwitcher/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[1]")).click();
+        });
+        step("Choose restaurant", () -> {
+            $(AppiumBy.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.ViewSwitcher/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.LinearLayout[2]/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[1]")).click();
+        });
+        step("Choose Combo", () -> {
+            $(AppiumBy.xpath("//android.widget.LinearLayout[@content-desc=\"Комбо\"]/android.widget.TextView")).click();
+        });
+        step("Check combo for one", () -> {
+            $(AppiumBy.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.ViewSwitcher/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.FrameLayout[1]/android.view.ViewGroup/android.view.ViewGroup[2]/android.widget.FrameLayout/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[1]/android.widget.LinearLayout/android.widget.TextView[1]")).shouldHave(Condition.text("Комбо от 599 ₽"));
         });
     }
 }
