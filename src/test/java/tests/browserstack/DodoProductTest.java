@@ -25,10 +25,10 @@ public class DodoProductTest extends TestBase {
             $(AppiumBy.id("ru.dodopizza.app:id/00000000-0000-0021-ffff-ffff00000043"));
         });
         step("Choose delivery option", () -> {
-            $(id("ru.dodopizza.app:id/00000000-0000-0019-ffff-ffff0000005b")).click();
+            $(AppiumBy.id("ru.dodopizza.app:id/00000000-0000-0019-ffff-ffff0000005b")).click();
         });
         step("Choose city", () -> {
-            $(id("ru.dodopizza.app:id/00000000-0000-0019-ffff-ffff00000095")).click();
+            $(AppiumBy.id("ru.dodopizza.app:id/00000000-0000-0019-ffff-ffff00000095")).click();
         });
     }
 }
