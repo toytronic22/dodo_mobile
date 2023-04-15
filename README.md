@@ -1,4 +1,4 @@
-# Дипломный проект по тестирования мобильного приложения [Dodopizza](https://github.com/toytronic22/dodo_mobile)
+# Дипломный проект тестирования мобильного приложения [Dodopizza](https://github.com/toytronic22/dodo_mobile)
 
 <p align="center">
   <img src="media/logo/Dodo_Logo.jpg" alt="dodopizza" width="900">
