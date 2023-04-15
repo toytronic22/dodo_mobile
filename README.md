@@ -1,7 +1,7 @@
 # Дипломный проект по тестирования мобильного приложения [Dodopizza](https://github.com/toytronic22/dodo_mobile)
 
 <p align="center">
-  <img src="media/logo/Dodo_Logo.png" alt="dodopizza" width="200">
+  <img src="media/logo/Dodo_Logo.svg" alt="dodopizza" width="900">
 </p>
 
 ## :open_book: Содержание:
@@ -51,7 +51,7 @@ gradle clean browserstack_test -Denv=browserstack
 Для запуска сборки необходимо нажать кнопку <code><strong>*Собрать сейчас*</strong></code>.
 
 <p align="center">
-  <img src="media/screen/start_jenkins.png" alt="Jenkins" width="800">
+  <img src="media/screen/start_jenkins.png" alt="Jenkins" width="900">
 </p>
 
 После выполнения сборки, в блоке <code><strong>*История сборок*</strong></code> напротив номера сборки появится
