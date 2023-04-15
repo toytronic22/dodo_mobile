@@ -1,7 +1,7 @@
-# Дипломный проект по тестирования мобильного приложения [Wikipedia](https://github.com/wikimedia/apps-android-wikipedia/)
+# Дипломный проект по тестирования мобильного приложения [Dodopizza](https://github.com/toytronic22/dodo_mobile)
 
 <p align="center">
-  <img src="media/logo/Wikipedia.svg" alt="Wikipedia" width="200">
+  <img src="media/logo/Dodo_Logo.png" alt="dodopizza" width="200">
 </p>
 
 ## :open_book: Содержание:
@@ -34,11 +34,9 @@
 
 ## :heavy_check_mark: Тест кейсы
 
-- Проверка прохождения начальных экранов
-- Проверка перехода на страницу входа
-- Проверка поиска
-- Проверка корректного открытия статьи
-- Проверка некорректного открытия статьи
+- Проверка помещения корректного продукта в корзину
+- Проверка наличия продукта на странице
+- Проверка текста карточки продукта
 
 ## :computer: Запуск тестов из терминала
 
@@ -46,12 +44,6 @@
 
 ```bash
 gradle clean browserstack_test -Denv=browserstack
-```
-
-### Локальный запуск тестов
-
-```bash
-gradle clean emulation_test -Denv=emulation
 ```
 
 ## <img width="4%" title="Jenkins" src="media/logo/Jenkins.svg"> Запуск тестов в [Jenkins](https://jenkins.autotests.cloud/)
@@ -65,7 +57,7 @@ gradle clean emulation_test -Denv=emulation
 После выполнения сборки, в блоке <code><strong>*История сборок*</strong></code> напротив номера сборки появится
 значок *Allure Report* и *Allure TestOps* кликнув по которому, откроется страница с сформированным html-отчетом и тестовой документацией.
 
-## <img width="4%" title="Allure Report" src="media/logo/Allure_Report.svg"> Отчет о результатах тестирования в [Allure Report](https://jenkins.autotests.cloud/job/SUkhinin_diplom_mobile/)
+## <img width="4%" title="Allure Report" src="media/logo/Allure_Report.svg"> Отчет о результатах тестирования в [Allure Report](https://jenkins.autotests.cloud/job/C017-toytronic-dodo_mobile/)
 
 
 <p align="center">
@@ -102,7 +94,7 @@ gradle clean emulation_test -Denv=emulation
 
 На данном видео выполняется:
 
-- Проверка некорректного открытия статьи
+- Проверка добавления продукта в корзину
 
 
 <p align="center">
