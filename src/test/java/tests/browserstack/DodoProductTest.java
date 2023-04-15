@@ -19,9 +19,14 @@ public class DodoProductTest extends TestBase {
     @Owner("toytronic")
     void checkButtonLogIn() {
 
-        step("Click on Combo button", () -> {
-            $(xpath("//android.widget.LinearLayout[@content-desc=\"Комбо\"]")).click();
+        step("Choose country", () -> {
+            $(id("00000000-0000-0019-ffff-ffff00000043")).click();
         });
-
+        step("Choose delivery option", () -> {
+            $(id("00000000-0000-0019-ffff-ffff0000005b")).click();
+        });
+        step("Choose city", () -> {
+            $(id("00000000-0000-0019-ffff-ffff00000095")).click();
+        });
     }
 }
